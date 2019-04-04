@@ -1,3 +1,1 @@
 # orcl-db-pipeline
-
-test
