@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-echo "To jest testowa wiadomość"
+echo "Teraz czas na auto-merge"
