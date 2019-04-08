@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-
-sh docker.sh
+echo pwd
+docker.sh
