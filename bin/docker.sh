@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
-docker run hello-world
+cd ../docker/OracleDatabase/dockerfiles/
+./buildImage.sh
