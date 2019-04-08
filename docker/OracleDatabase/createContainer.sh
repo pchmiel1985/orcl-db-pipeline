@@ -7,7 +7,7 @@ networkName="dwh"
 containerName="mul"
 
 isNetExists=$(docker network ls |grep -c $networkName)
-isContainerExists=$(docker ps -a |grep -c mul)
+isContainerExists=$(docker ps -a |grep -c $containerName)
 
 if [[ $isNetExists = "0" ]]; then
     docker network create -d bridge $networkName
@@ -26,7 +26,7 @@ if [[ $isContainerExists = "0" ]]; then
     orcl:12.2.0.1-ee
     ./waitContainer.sh 360
 else
-    docker start containerName
+    docker start $containerName
     ./waitContainer.sh 60
 fi
 
