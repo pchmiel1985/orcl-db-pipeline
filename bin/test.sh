@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
-echo pwd
-docker.sh
+pwd=$(pwd)
+
+$pwd"/"docker.sh
