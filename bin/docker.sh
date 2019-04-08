@@ -1,3 +1,9 @@
 #!/usr/bin/env bash
-cd ../docker/OracleDatabase/dockerfiles/
+pwd ${pwd}
+cd $pwd/docker/OracleDatabase/dockerfiles/
+
 ./buildImage.sh $1
+
+cd $pwd/docker/OracleDatabase/
+
+echo "create container"
