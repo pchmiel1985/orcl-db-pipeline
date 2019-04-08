@@ -2,3 +2,4 @@
 . env.sh
 
 echo $testowa
+./docker.sh
