@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 . env.sh
 
-./docker.sh $files_store_location
+./docker.sh $files_store_location $database_location

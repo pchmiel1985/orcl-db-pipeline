@@ -5,9 +5,8 @@ imageName="orcl:12.2.0.1-ee"
 
 #Utwórz obraz bazydanych dla docker
 cd ../docker/OracleDatabase/dockerfiles/
-. ./buildImage.sh $1 $imageName
+./buildImage.sh $1 $imageName
 
-#Utwórz kontener bazydanych w docker
-cd $pwd
-cd ../docker/OracleDatabase/
-. ./createContainer.sh $imageName
+#Utwórz kontener bazy danych w docker
+cd ..
+./createContainer.sh $imageName $2

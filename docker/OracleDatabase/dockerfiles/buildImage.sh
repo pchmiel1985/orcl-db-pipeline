@@ -11,3 +11,4 @@ docker build -t $2 -f Dockerfile.ee . || {
   echo "Nastapił błąd podczas budowania obrazu."
   exit 1
 }
+exit
