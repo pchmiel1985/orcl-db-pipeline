@@ -4,12 +4,12 @@ echo "create container $1"
 echo "-------------------------------------------"
 
 isNetExists=$(docker network ls |grep -c dwh)
-if [[ isNetExists=0 ]]; then
+if [[ $isNetExists = "0" ]]; then
     docker network create -d bridge dwh
 fi
 
 isContainerExists=$(docker ps -a |grep -c mul)
-if [[ isContainerExists=0 ]]; then
+if [[ $isContainerExists = "0" ]]; then
     docker run --rm --name mul --network=dwh \
     -p 1521:1521 \
     -p 5500:5500 \
