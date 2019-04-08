@@ -24,10 +24,10 @@ if [[ $isContainerExists = "0" ]]; then
     -v $2:/opt/oracle/oradata \
     -e ORACLE_CHARACTERSET=AL32UTF8 \
     orcl:12.2.0.1-ee
-    ./waitContainer.sh 360
+    ./waitContainer.sh $containerName 360
 else
     docker start $containerName
-    ./waitContainer.sh 60
+    ./waitContainer.sh $containerName 60
 fi
 
 exit
