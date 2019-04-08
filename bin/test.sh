@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-./docker.sh
+sh docker.sh
