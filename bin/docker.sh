@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 cd ../docker/OracleDatabase/dockerfiles/
-./buildImage.sh
+./buildImage.sh $1

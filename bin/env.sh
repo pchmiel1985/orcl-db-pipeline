@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-export testowa="to jest test"
+export files_store_location = "/home/file_store"

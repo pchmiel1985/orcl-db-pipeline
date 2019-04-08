@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
 . env.sh
 
-echo $testowa
-./docker.sh
+./docker.sh $files_store_location
