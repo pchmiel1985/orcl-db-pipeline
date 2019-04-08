@@ -1,4 +1,3 @@
 #!/usr/bin/env bash
-pwd=$(pwd)
-
-$pwd"/"docker.sh
+cd ..
+bin/docker.sh
