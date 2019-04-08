@@ -14,7 +14,7 @@ if [[ $isNetExists = "0" ]]; then
 fi
 
 if [[ $isContainerExists = "0" ]]; then
-    docker run --rm --name $containerName --network=$networkName \
+    docker run -d --name $containerName --network=$networkName \
     -p 1521:1521 \
     -p 5500:5500 \
     -p 8082:8082 \
