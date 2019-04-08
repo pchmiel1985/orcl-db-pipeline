@@ -1,11 +1,13 @@
 #!/usr/bin/env bash
 pwd=${PWD}
-echo $pwd
+
+imageName="orcl:12.2.0.1-ee"
+
+#Utwórz obraz bazydanych dla docker
 cd ../docker/OracleDatabase/dockerfiles/
+./buildImage.sh $1 $imageName
 
-./buildImage.sh $1
-
+#Utwórz kontener bazydanych w docker
 cd $pwd
 cd ../docker/OracleDatabase/
-
-echo "create container"
+./createContainer.sh $imageName
