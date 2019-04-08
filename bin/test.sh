@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-pwd = $(pwd)
+. env.sh
 
-echo $pwd
+echo $testowa
